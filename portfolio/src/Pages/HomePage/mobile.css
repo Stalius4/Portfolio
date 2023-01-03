@@ -1,0 +1,68 @@
+@media only screen and (max-width: 767px) {
+    html {
+     background-color: #282828;
+     
+    }
+
+
+    .main-container{
+     
+        background-color: #313131;
+        width: 85%;
+        max-width: 700px;
+        height: 70vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 19px;
+
+         border-top: 1.5px solid rgba(255, 255, 255, 0.105);
+         box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 30px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset, rgba(10, 10, 10, 0.2) 0px -10px 15px inset, rgba(10, 10, 10, 0.2) 0px -10px 20px inset;
+    }
+
+    nav{
+position: relative;
+display: flex;
+justify-content: space-between;
+padding: 25px;
+border-bottom: solid rgba(40, 35, 35, 0.765) 2px;
+box-shadow:  rgba(0, 0, 0, 0.2) 0px -3px 0px inset, rgba(0, 0, 0, 0.082) 0px -3px 0px inset;
+    }
+
+    .nav-decoration{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.62);
+     
+    }
+    .home{
+position: relative;
+
+    }
+.home::after {
+    position: absolute;
+ left: -18px;
+  bottom: -25px; 
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: rgba(240, 248, 255, 0);
+    
+    border-width: 1px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+            to left, 
+            #2c56b71d,
+            #1451df,
+            #5787f7,
+            #f9fafa70,
+            #5787f7,
+            #1451df,
+            #2c56b71d
+          ) 0 0 1 0 ;
+          
+}
+
+  }
+
