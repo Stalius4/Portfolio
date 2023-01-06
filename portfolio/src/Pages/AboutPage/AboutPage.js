@@ -5,10 +5,10 @@ const AboutPage = () => {
   return (
     <div className='outer'>
      <div className='horizontal-flex'>
-     <Link to="/"  className='home top-border-left'>HOME</Link>
-     <Link to="/about" className='about2 targeted '>ABOUT</Link>
+     <Link to="/"  className='home top-border-left'> <div className='circle'></div>HOME</Link>
+     <Link to="/projects" className='about2'>PROJECTS</Link>
      <Link to="/contact" className='about2'>CONTACT</Link>
-     <Link to="/projects" className='about2 top-border-right'> PROJECTS</Link>
+     <Link to="/about" className='about2 top-border-right targeted'>ABOUT  <div className='circle'></div></Link>
      </div>
    
        <div className='main-container'>
