@@ -35,73 +35,15 @@
 
 
 
-    .home2::after {
-   
-            position: absolute;
-            content: "";
-            top: 64px;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            height: 2.5%;
-            width: 100%;
-    
-     
-            background: linear-gradient(
-              to left,
-              #1d1d1e00,
-              #0661c2,
-              #3081DA,
-              #43C9E7,
-              #C9DBF7,
-              #43C9E7,
-              #3081DA,
-              #0661c2,
-              #1d1d1e00
-            );
-           
-           
-        }
-
-
-
-.home2::before {
-   
-    position: absolute;
-    content: "";
-    top: 57px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    height: 10%;
-    width: 100%;
-    filter: blur(2px)  contrast(100%);
-
-    background: linear-gradient(
-      to left,
-      #1d1d1e03,
-      #0661c23f,
-      #0661c286,
-      #067dc2b7,
-      #0661c286,
-      #0661c23f,
-      #0300cf00
-
-    );
-   
-
-}
 
 
 
 
-
-
-.home2,
+.home,
 .about2 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.564);
+ 
     background-color: #313131;
     display: flex;
     align-items: center;
@@ -109,7 +51,7 @@
     width: 80px;
     height: 62px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.62);
+    color: rgba(255, 255, 255, 0.657);
     border-top: 1.5px solid rgba(255, 255, 255, 0.105);
     border-bottom: #1e1c1cbd 1px solid;
     box-shadow:
@@ -123,12 +65,13 @@
 .top-border-left {
     border-radius: 19px 0px 0px 0px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.62);
+ 
     box-shadow:
         rgba(0, 0, 0, 0.4) 0px 2px 4px,
         61px 0px 10px -58px rgba(14,8,8,0.45) inset,
         /* rgba(0, 0, 0, 0.211) 0px 7px 13px -3px, */
         rgba(0, 0, 0, 0.239) 0px 0px 0px inset;
+        
 }
 
 .top-border-right {
@@ -149,6 +92,62 @@
     
     z-index: 1;
 }
+
+
+}
+
+
+.targeted{
+    color: white;
+  font-size: 15px;
+}
+.targeted::after {
+    position: absolute;
+    content: "";
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 2.5%;
+    width: 100%;
+    background: linear-gradient(
+      to left,
+      #1d1d1e00,
+      #0661c2,
+      #3081DA,
+      #43C9E7,
+      #C9DBF7,
+      #43C9E7,
+      #3081DA,
+      #0661c2,
+      #1d1d1e00
+    );
+}
+
+
+
+.targeted::before {
+
+position: absolute;
+content: "";
+top: 57px;
+left: 0;
+right: 0;
+z-index: 1;
+height: 10%;
+width: 100%;
+filter: blur(2px)  contrast(100%);
+background: linear-gradient(
+to left,
+#1d1d1e03,
+#0661c23f,
+#0661c286,
+#067dc2b7,
+#0661c286,
+#0661c23f,
+#0300cf00
+
+);
 
 
 }
