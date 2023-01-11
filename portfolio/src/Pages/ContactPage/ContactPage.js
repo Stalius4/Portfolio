@@ -5,11 +5,11 @@ const ContactPage = () => {
   return (
     <div className='outer'>
      <div className='horizontal-flex'>
-     <Link to="/"  className='home top-border-left '>HOME</Link>
-     <Link to="/about" className='about2'>ABOUT</Link>
+     <Link to="/"  className='home top-border-left '><div className='circle'></div>HOME </Link>
+     <Link to="/projects" className='about2'>PROJECTS</Link>
      <Link to="/contact" className='about2 targeted'>CONTACT</Link>
-     <Link to="/projects" className='about2 top-border-right '> PROJECTS</Link>
-     </div>
+     <Link to="/about" className='about2 top-border-right'> ABOUT <div className='circle'></div></Link>
+  </div>
    
        <div className='main-container'>
       </div>
