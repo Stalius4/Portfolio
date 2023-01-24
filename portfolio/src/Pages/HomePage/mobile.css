@@ -6,6 +6,7 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
     @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     .outer{
         display: flex;
         flex-direction: column;
@@ -25,7 +26,7 @@
         height: 55vh;
         border-radius: 5px 5px 0px 0px;
         border-top: 1.5px solid rgba(255, 255, 255, 0.105);
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 30px,
+        box-shadow: rgba(0, 0, 0, 0.344) 00px 5px 15px 2px,
          /* rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
           rgba(0, 0, 0, 0.2) 0px -10px 0px inset,
            rgba(10, 10, 10, 0.2) 0px -10px 15px inset */
@@ -35,6 +36,7 @@
            /* rgba(0, 0, 0, 0.211) 0px 7px 13px -3px, */
    
             ;
+            
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -43,7 +45,6 @@
          padding-bottom: 30px;
          align-items:center;
   padding-top: 30px;
-       
     }
 
 
@@ -236,34 +237,32 @@ footer{
 
 
 .left-footer{
-  
+    border-top: 1.5px solid rgba(255, 255, 255, 0.105);
     height: 70px;
     width: 164px;
-    background-color: #313131;
+    background-color: #2f2e2e;
     border-radius: 0px 0px 0px 19px;
-    box-shadow: 
-
-     rgba(0, 0, 0, 0.2) 0px -10px 0px inset,
-      rgba(51, 51, 51, 0.2) 0px -10px 15px inset
-      ,rgba(10, 10, 10, 0.2) 0px -10px 20px inset
-       ;
-       z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 2px 2px, 
+    rgba(1, 1, 1, 0.375) 0px 7px 13px -3px,
+     rgba(30, 29, 29, 0.3) 11px -3px 5px 1px inset,
+    rgba(20, 18, 18, 0.627) 0px -7px 1px 0px inset;
+       z-index: 1;
        
      
 }
 
 .right-footer{
-    
+    border-top: 1.5px solid rgba(255, 255, 255, 0.105);
     height: 70px;
     width: 164px;
     background-color: #313131;
     border-radius: 0px 0px 19px 0px;
-    box-shadow: 
-     rgba(0, 0, 0, 0.2) 0px -10px 0px inset,
-      rgba(10, 10, 10, 0.2) 0px -10px 15px inset
-      ,rgba(10, 10, 10, 0.2) 30px -10px 10px inset
-       ;
-       z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 2px 2px, 
+    rgba(1, 1, 1, 0.375) 0px 7px 13px -3px,
+     rgba(30, 29, 29, 0.3) -11px -3px 5px 1px inset,
+    rgba(20, 18, 18, 0.627) 0px -7px 1px 0px inset;
+          z-index: 0;
+ 
      
 }
 
@@ -290,7 +289,7 @@ footer{
     text-align: center;
     font-stretch: ultra-expanded;
     font-size: 13px;
-    font-family: "Audiowide", cursive;
+    font-family: 'Montserrat', sans-serif;
 	color: rgb(194, 186, 186);
     text-shadow: 0 8px 9px #0a0907, 0px -2px 1px rgb(27, 20, 20) ;
  
