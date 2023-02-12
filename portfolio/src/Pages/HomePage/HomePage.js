@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../HomePage/mobile.css"
 import gitpng from "../images/Vector.png"
 import linkedinpng from "../images/LinkedIn.png"
+
 const HomePage = () => {
 
 
@@ -29,8 +30,8 @@ a front-end developer with a passion for creating great user experiences. <br/>I
 
    </div>
    <footer>
-  <div className='left-footer'>  <img src={gitpng} alt="git"  /></div>
-<div className='right-footer'>  <img src={linkedinpng} alt="Linked in"/></div>
+  <div className='left-footer'> <img className="git" src={gitpng} alt="git"  /></div>
+<div className='right-footer'>  <img  className="linked-in" src={linkedinpng} alt="Linked in"/></div>
 
   </footer>
 </div>
