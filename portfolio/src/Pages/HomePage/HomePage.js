@@ -26,13 +26,19 @@ a front-end developer with a passion for creating great user experiences. <br/>I
 <div className='thanks'>Thank you for visiting!</div>
 
 </div>
-<button>MY CV</button>
+<button><Link className='myCV' to="/cv.pdf" target="_blank" download>MY CV</Link></button>
 
    </div>
    <footer>
-  <div className='left-footer'> <img className="git" src={gitpng} alt="git"  /></div>
-<div className='right-footer'>  <img  className="linked-in" src={linkedinpng} alt="Linked in"/></div>
-
+  <div className='left-footer'> 
+  <div className='bottom-circle-left'></div>
+   <a href="https://github.com/Stalius4 " target="_blank">
+    <img className="git" src={gitpng} alt="git"/>
+    </a></div>
+<div className='right-footer'> 
+<a href="https://www.linkedin.com/in/deivydas-rimgaila-8aa787218/" target="_blank">
+ <img  className="linked-in" src={linkedinpng} alt="Linked in" /></a></div>
+ <div className='bottom-circle-right'></div>
   </footer>
 </div>
   );
