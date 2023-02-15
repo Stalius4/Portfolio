@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../HomePage/mobile.css"
 import gitpng from "../images/Vector.png"
@@ -6,14 +7,26 @@ import linkedinpng from "../images/LinkedIn.png"
 
 const HomePage = () => {
 
+const [page, setPage] = useState(1)
+
+const changePage = (value) => {
+
+setPage(value)
+console.log(page)
+}
+
+
+
+
+
 
   return (
  <div className='outer'>
   <div className='horizontal-flex'>
-  <Link to="/"  className='home top-border-left targeted'><div className='circle'></div>HOME </Link>
-  <Link to="/projects" className='about2'>PROJECTS</Link>
-  <Link to="/contact" className='about2'>CONTACT</Link>
-  <Link to="/about" className='about2 top-border-right'> ABOUT <div className='circle'></div></Link>
+  <div   className={page==1  ?'home top-border-left targeted' :'home top-border-left' } onClick={ () =>changePage(1)}><div className='circle'></div>HOME </div>
+  <div  className={page==2  ?'about2 targeted' :'about2' } onClick={ () =>changePage(2)}>PROJECTS</div>
+  <div  className={page==3  ?'about2 targeted' :'about2' }  onClick={ () =>changePage(3)}>CONTACT</div>
+  <div  className={page==4  ?'about2 top-border-right targeted' :'about2 top-border-right' } onClick={ () =>changePage(4)}> ABOUT <div className='circle'></div></div>
   </div>
 
     <div className='main-container'>
