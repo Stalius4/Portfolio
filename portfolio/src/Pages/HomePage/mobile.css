@@ -115,32 +115,9 @@
 
 
 
-.targeted::before {
 
-position: absolute;
-content: "";
-top: 57px;
-left: 0;
-right: 0;
-z-index: 1;
-height: 10%;
-width: 100%;
-filter: blur(2px)  contrast(100%);
-background: linear-gradient(
-to left,
-#1d1d1e03,
-#0661c23f,
-#0661c286,
-#067dc2b7,
-#0661c286,
-#0661c23f,
-#0300cf00
 
-);
-
-}
-
-.active{
+.activeBorder{
     position: absolute;
  
     top: 64px;
@@ -164,8 +141,34 @@ to left,
   }
 
 
-  .position{
-    left:3px;
+
+.activeShadow {
+
+position: absolute;
+content: "";
+top: 56px;
+left: 3px;
+right: 0;
+z-index: 1;
+height: 7px;
+width: 78px;
+filter: blur(2px)  contrast(100%);
+background: linear-gradient(
+to left,
+#1d1d1e03,
+#0661c23f,
+#0661c286,
+#067dc2b7,
+#0661c286,
+#0661c23f,
+#0300cf00
+
+);
+transition: all 0.7s ease-out;
+}
+
+.position{
+    left:4px;
   }
   .positionProjects{
     left:84px;
@@ -177,9 +180,6 @@ to left,
     left:168px;
   }
   
-
-
-
 .bottom-circle-left{
     width: 8px;
     height: 8px;

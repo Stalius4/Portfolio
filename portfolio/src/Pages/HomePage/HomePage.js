@@ -24,10 +24,14 @@ setPage(value)
  <div className='outer'>
 
   <div className='horizontal-flex'>
-  <spam className={page ==1 ?"active position":
-      page ==2? "active positionProjects" :
-      page ==3? "active positionContact" :
-      page ==4? "active positionAbout" : "active position"}></spam>
+  <spam className={page ==1 ?"activeBorder position":
+      page ==2? "activeBorder positionProjects" :
+      page ==3? "activeBorder positionContact" :
+      page ==4? "activeBorder positionAbout" : "activeBorder position"}></spam>
+    <spam className={page ==1 ?"activeShadow position":
+      page ==2? "activeShadow positionProjects" :
+      page ==3? "activeShadow positionContact" :
+      page ==4? "activeShadow positionAbout" : "activeShadow position"}></spam>
   <div   className={page==1  ?'home top-border-left targeted' :'home top-border-left' } onClick={ () =>changePage(1)}><div className='circle'></div>HOME </div>
   <div  className={page==2  ?'about2 targeted' :'about2' } onClick={ () =>changePage(2)}>PROJECTS</div>
   <div  className={page==3  ?'about2 targeted' :'about2' }  onClick={ () =>changePage(3)}>CONTACT</div>
