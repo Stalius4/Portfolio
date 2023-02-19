@@ -10,10 +10,10 @@ const HomePage = () => {
 const [page, setPage] = useState(1)
 
 const changePage = (value) => {
-
 setPage(value)
-console.log(page)
+
 }
+
 
 
 
@@ -22,11 +22,16 @@ console.log(page)
 
   return (
  <div className='outer'>
+
   <div className='horizontal-flex'>
+  <spam className={page ==1 ?"active position":
+      page ==2? "active positionProjects" :
+      page ==3? "active positionContact" :
+      page ==4? "active positionAbout" : "active position"}></spam>
   <div   className={page==1  ?'home top-border-left targeted' :'home top-border-left' } onClick={ () =>changePage(1)}><div className='circle'></div>HOME </div>
   <div  className={page==2  ?'about2 targeted' :'about2' } onClick={ () =>changePage(2)}>PROJECTS</div>
   <div  className={page==3  ?'about2 targeted' :'about2' }  onClick={ () =>changePage(3)}>CONTACT</div>
-  <div  className={page==4  ?'about2 top-border-right targeted' :'about2 top-border-right' } onClick={ () =>changePage(4)}> ABOUT <div className='circle'></div></div>
+  <div  className={page==4  ?'about2 top-border-right targeted' :'about2 top-border-right' } onClick={ (e) =>changePage(4)}> ABOUT <div className='circle'></div></div>
   </div>
 
     <div className='main-container'>

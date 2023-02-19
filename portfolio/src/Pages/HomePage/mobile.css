@@ -108,33 +108,10 @@
 .targeted{
     color: white;
     transform: scale(0.95);
+  
+    transition: all 1s ease-out;
+}
 
-}
-.targeted::after {
-    
-    position: absolute;
-    content: "";
-    top: 64px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 2.5%;
-    width: 100%;
-    background: linear-gradient(
-      to left,
-      #1d1d1e00,
-      #0661c2,
-      #3081DA,
-      #43C9E7,
-      #C9DBF7,
-      #43C9E7,
-      #3081DA,
-      #0661c2,
-      #1d1d1e00
-    );
-    animation: fromAboutToHome 0.55s linear;
-   
-}
 
 
 
@@ -160,29 +137,46 @@ to left,
 #0300cf00
 
 );
-transition: all 1s ease-out;
+
 }
 
-
-@keyframes move {
-    0% {
-      transform: translateX(-80px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
+.active{
+    position: absolute;
+ 
+    top: 64px;
+    z-index: 1;
+ 
+    height: 1.3px;
+    width: 78px;
+    background: linear-gradient(
+      to left,
+      #1d1d1e00,
+      #0661c2,
+      #3081DA,
+      #43C9E7,
+      #C9DBF7,
+      #43C9E7,
+      #3081DA,
+      #0661c2,
+      #1d1d1e00
+    );
+    transition: all 0.7s ease-out;
   }
 
-  @keyframes fromHomeToHome {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-200px);
-    }
+
+  .position{
+    left:3px;
   }
-
-
+  .positionProjects{
+    left:84px;
+  }
+  .positionAbout{
+    left:252px;
+  }
+  .positionContact{
+    left:168px;
+  }
+  
 
 
 
