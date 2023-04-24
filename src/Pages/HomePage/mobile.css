@@ -98,7 +98,7 @@
 .horizontal-flex {
     display: flex;
     gap: 4px;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -180,6 +180,9 @@ transition: all 0.7s ease-out;
     left:168px;
   }
   
+  
+
+
 .bottom-circle-left{
     width: 8px;
     height: 8px;
